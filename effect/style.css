@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #dde1e7;
+}
+
+.neumorphism-1 {
+    height: 50px;
+    width: 50px;
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+}
