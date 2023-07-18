@@ -20,12 +20,12 @@
                     </div>
                 </div>
             </div>
-            <div class="note">abcd</div>
+            <!-- <div class="note">abcd</div> -->
         </div>
     </div>
 
     <script>
-        let createBox = document.getElementById('createBox')[0];
+        let createBox = document.getElementsByClassName('createBox')[0];
         let notes = document.getElementsByClassName('notes')[0];
         let input = document.getElementById('userInput');
         let i = 0;
@@ -55,7 +55,7 @@
         function divStyle(text) {
             let div = document.createElement("div");
             div.className = 'note';
-            div.innerHtml = '<div class="details">' + '<h3>' + text + '</h3>' + '</div>';
+            div.innerHTML = '<div class="details">' + '<h3>' + text + '</h3>' + '</div>';
 
             div.addEventListener("dblclick", function(){
                 div.remove();

@@ -11,7 +11,8 @@
 }
 
 body {
-    background: #2f363e;
+    /* background: #2f363e; */
+
 }
 
 .container {
@@ -47,7 +48,8 @@ body {
     position: relative;
     width: var(--size);
     height: var(--size);
-    background: rgba(255, 255, 255, 0.15);
+    /* background: rgba(255, 255, 255, 0.15); */
+    border: 2px solid lightgray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +59,8 @@ body {
 
 #create i {
     position: absolute;
-    color: #fff;
+    /* color: #fff; */
+    color: lightgray;
 }
 
 .createBox {

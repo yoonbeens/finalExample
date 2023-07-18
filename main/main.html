@@ -8,6 +8,10 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?
     family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="main.css">
 
@@ -16,7 +20,7 @@
 
     <div class="container">
         <div class="navbar">
-            <img src="images/background.jpg" class="logo">
+            <img src="images/logoEx.png" class="logo">
             <nav>
                 <ul>
                     <li><a href="">HOME</a></li>
@@ -24,13 +28,19 @@
                     <li><a href="">GAMES</a></li>
                 </ul>
             </nav>
-            <img src="images/background.jpg" class="menu-icon">
+            <!-- <img src="images/background.jpg" class="menu-icon"> -->
+            <div class="toggle menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <h1>krayon</h1>
-                <p></p>
+                <br>
+                <p>보는 이상 그것을 품고 소금이라 눈에 같이 부패뿐이다. 군영과 그들의 얼마나 이상, 보이는 눈에 피에 사랑의 쓸쓸하랴? 돋고, 새가 같으며, 황금시대다. 밥을 풍부하게 이상의 작고 천지는 몸이 철환하였는가? 황금시대를 실현에 광야에서 귀는 약동하다. 그들의 피고, 눈에 하는 소금이라 우는 능히 봄바람이다. 위하여, 인간은 피고 거선의 쓸쓸하랴?</p>
                 <button type="button">시작하기</button>
             </div>
             <div class="col">
@@ -55,7 +65,12 @@
 
     </div>
 
-    
+    <script>
+        let menutoggle = document.querySelector('.toggle');
+        menutoggle.onclick = function() {
+            menutoggle.classList.toggle('active');
+        }
+    </script>
     
 </body>
 </html>
